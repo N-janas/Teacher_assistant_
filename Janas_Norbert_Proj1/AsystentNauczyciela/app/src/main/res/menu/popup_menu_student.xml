@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_popup_edit_student"
+        android:title="@string/buttonEdit_string" />
+    <item
+        android:id="@+id/action_popup_marks_student"
+        android:title="@string/action_popup_marks_string" />
+    <item
+        android:id="@+id/action_popup_delete_student"
+        android:title="@string/buttonDelete_string" />
+</menu>

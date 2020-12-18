@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_file"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.asystentnauczyciela.view.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_subjectsFragment"
+            app:destination="@id/subjectsFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_allStudentsFragment"
+            app:destination="@id/allStudentsFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_raportFragment"
+            app:destination="@id/raportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subjectsFragment"
+        android:name="com.example.asystentnauczyciela.view.SubjectsFragment"
+        android:label="fragment_subjects"
+        tools:layout="@layout/fragment_subjects" >
+        <action
+            android:id="@+id/action_subjectsFragment_to_editCourseFragment"
+            app:destination="@id/editCourseFragment" />
+        <action
+            android:id="@+id/action_subjectsFragment_to_studentsCourseFragment"
+            app:destination="@id/studentsCourseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allStudentsFragment"
+        android:name="com.example.asystentnauczyciela.view.AllStudentsFragment"
+        android:label="fragment_all_students"
+        tools:layout="@layout/fragment_all_students" >
+        <action
+            android:id="@+id/action_allStudentsFragment_to_editStudentFragment"
+            app:destination="@id/editStudentFragment" />
+        <action
+            android:id="@+id/action_allStudentsFragment_to_studentsCoursesFragment"
+            app:destination="@id/studentsCoursesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentMarkFragment"
+        android:name="com.example.asystentnauczyciela.view.StudentMarkFragment"
+        android:label="fragment_student_mark"
+        tools:layout="@layout/fragment_student_mark" >
+        <argument
+            android:name="students_id"
+            app:argType="integer" />
+        <argument
+            android:name="name_lastname"
+            app:argType="string" />
+        <argument
+            android:name="subjectId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCourseFragment"
+        android:name="com.example.asystentnauczyciela.view.EditCourseFragment"
+        android:label="fragment_edit_course"
+        tools:layout="@layout/fragment_edit_course" >
+        <argument
+            android:name="currentCourseId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/editStudentFragment"
+        android:name="com.example.asystentnauczyciela.view.EditStudentFragment"
+        android:label="fragment_edit_student"
+        tools:layout="@layout/fragment_edit_student" >
+        <argument
+            android:name="currentStudentId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentsCourseFragment"
+        android:name="com.example.asystentnauczyciela.view.StudentsCourseFragment"
+        android:label="fragment_students_group"
+        tools:layout="@layout/fragment_students_group" >
+        <action
+            android:id="@+id/action_studentsCourseFragment_to_studentMarkFragment"
+            app:destination="@id/studentMarkFragment" />
+        <argument
+            android:name="currentSubjectId"
+            app:argType="integer" />
+        <argument
+            android:name="subjectTitle"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_studentsCourseFragment_to_addStudentToCourseFragment"
+            app:destination="@id/addStudentToCourseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentToCourseFragment"
+        android:name="com.example.asystentnauczyciela.view.AddStudentToCourseFragment"
+        android:label="fragment_add_student_to_course"
+        tools:layout="@layout/fragment_add_student_to_course" />
+    <fragment
+        android:id="@+id/studentsCoursesFragment"
+        android:name="com.example.asystentnauczyciela.view.StudentsCoursesFragment"
+        android:label="fragment_students_courses"
+        tools:layout="@layout/fragment_students_courses" >
+        <argument
+            android:name="studentId"
+            app:argType="integer" />
+        <argument
+            android:name="studentNameLastName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_studentsCoursesFragment_to_marksOfStudentFragment"
+            app:destination="@id/marksOfStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/marksOfStudentFragment"
+        android:name="com.example.asystentnauczyciela.view.MarksOfStudentFragment"
+        android:label="fragment_marks_of_student"
+        tools:layout="@layout/fragment_marks_of_student" >
+        <argument
+            android:name="studentId"
+            app:argType="integer" />
+        <argument
+            android:name="courseId"
+            app:argType="integer" />
+        <argument
+            android:name="studentName"
+            app:argType="string" />
+        <argument
+            android:name="courseName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/raportFragment"
+        android:name="com.example.asystentnauczyciela.view.RaportFragment"
+        android:label="fragment_raport"
+        tools:layout="@layout/fragment_raport" />
+</navigation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_popup_delete_course"
+        android:title="@string/buttonDelete_string" />
+    <item
+        android:id="@+id/action_popup_participants_course"
+        android:title="@string/action_popup_participants_course_string" />
+    <item
+        android:id="@+id/action_popup_edit_course"
+        android:title="@string/buttonEdit_string" />
+</menu>

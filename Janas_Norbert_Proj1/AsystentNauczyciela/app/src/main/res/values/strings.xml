@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">AsystentNauczyciela</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titleView_string">Asystent Nauczyciela</string>
+    <string name="buttonAdd_string">Dodaj</string>
+    <string name="buttonEdit_string">Edytuj</string>
+    <string name="buttonSave_string">Zapisz</string>
+    <string name="buttonDelete_string">Usuń</string>
+    <string name="textViewNameTitle_string">Imie</string>
+    <string name="textViewLastNameTitle_string">Nazwisko</string>
+
+    <string name="buttonToSubjects_string">Zajęcia</string>
+    <string name="buttonAllStudents_string">Studenci</string>
+
+    <string name="action_popup_marks_string">Oceny</string>
+    <string name="action_popup_participants_course_string">Studenci</string>
+
+    <string name="backFromGroupStudents_string">Wróć do przedmiotów</string>
+    <string name="buttonMarkStudent_string">Oceń</string>
+    <string name="textViewMarkScreenTitle_string">Oceń Studenta</string>
+    <string name="buttonBackToStudents_string">Wróć</string>
+    <string name="textViewMarkSystemTitle_string">Oceny :</string>
+    <string name="textViewNoteTitle_string">Notatka</string>
+    <string name="textViewCourseNewNameTitle_string">Nazwa</string>
+    <string name="textViewAllStudentsTitle_string">Wszyscy Studenci</string>
+    <string name="action_popup_deleteFromCourse_string">Usuń z kursu</string>
+    <string name="action_popup_markTheStudent_string">Oceń</string>
+    <string name="buttonStudentAssign_string">Przypisz do kursu</string>
+    <string name="textViewStudentToChose_string">Studenci :</string>
+    <string name="textViewAddStudToCourseTitle_string">Przypisz innych studentów</string>
+    <string name="textViewCurrentStudentCourses_string">Kursy studenta :</string>
+    <string name="concatTitleAndStudent">Kursy studenta : %s</string>
+    <string name="concatTitleForMarksStudentName">Oceny studenta: %s</string>
+    <string name="concatTitleForMarksCourseName">z przedmiotu %s</string>
+    <string name="buttonRaport_string">Raport</string>
+    <string name="concatTitleRaport">Raport z dnia: %s</string>
+    <string name="header_mark_string">Ocena</string>
+    <string name="header_note_string">Notatka</string>
+    <string name="header_course_string">Kurs</string>
+    <string name="header_student_string">Student</string>
+    <string name="average_mark">Średnia ocen : %s</string>
+    <string name="average_mark_none">Brak</string>
+    <string-array name="mark_system">
+        <item> Ndst </item>
+        <item> Dst </item>
+        <item> Db </item>
+        <item> Bdb </item>
+    </string-array>
+</resources>

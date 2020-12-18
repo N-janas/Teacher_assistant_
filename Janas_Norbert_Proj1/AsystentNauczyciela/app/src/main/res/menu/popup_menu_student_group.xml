@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_popup_markTheStudent"
+        android:title="@string/action_popup_markTheStudent_string" />
+    <item
+        android:id="@+id/action_popup_deleteFromCourse"
+        android:title="@string/action_popup_deleteFromCourse_string" />
+</menu>
